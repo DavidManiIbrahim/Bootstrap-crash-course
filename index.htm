@@ -11,7 +11,21 @@
             <div class="container">
                 <a href="#" class="navbar-brand text-white ">Bootstrap Crash Course</a>
 
-                <div class="collapse navbar-collapse">
+                    <button
+                     class="navbar-toggler"
+                     style="height: 6vh;"
+                      type="button"
+                     data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                    >
+                    <div class="border mt-1"></div>
+                    <div class="border mt-1"></div>
+                    <div class="border mt-1"></div>
+                    <div class="border mt-1"></div>
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="#learn" class="nav-link">what you'll learn</a>
@@ -26,5 +40,8 @@
                 </div>
             </div>
         </nav>
+
+
+        <script src="bootstrap.min.js"></script>
 </body>
 </html>
