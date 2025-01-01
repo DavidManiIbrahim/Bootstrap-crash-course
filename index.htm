@@ -1,47 +1,67 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap crash course</title>
-    <link rel="stylesheet" href="bootstrap.css">
-</head>
-<body>
-        <nav class="navbar navbar-expand-lg bg-dark ">
-            <div class="container">
-                <a href="#" class="navbar-brand text-white ">Bootstrap Crash Course</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRONTEND BOOTCAMP</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-danger h-25 navbar-dark">
+    <div class="container">
+        <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+    
+        <button type="button" class="navbar-toggler "
+        data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">what you'll learn</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">instructors</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-                    <button
-                     class="navbar-toggler"
-                     style="height: 6vh;"
-                      type="buttone"
-                     data-bs-toggle="collapse"
-                    data-bs-target="#navmenu"
-                    >
-                    <div class="border mt-1"></div>
-                    <div class="border mt-1"></div>
-                    <div class="border mt-1"></div>
-                    <div class="border mt-1"></div>
-                        <span class="navbar-toggler-icon"></span>
-                </button>
+</nav>
 
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#learn" class="nav-link">what you'll learn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#questions" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#instructors" class="nav-link">Instructors</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!-- showcase -->
+
+<section class="bg-secondary text-light pt-5 text-center">
+    <div class="container">
+        <div class="d-md-flex p-3">
+             <div class="">
+                <h1>Become a <span class="text-info">WEB Developer</span> </h1>
+                <p class="lead">We focus on teaching our students the fundamentals
+                    of the latest and greatest technologies to prepare them
+                    for their first dev role
+                </p>
+                <button type="button" class="btn btn-lg btn-primary">Enroll Now</button>
+             </div>
+                 <video class="img-fluid w-50 mb-5 mx-5 my-5" src="./assets/Things to know.mp4" 
+                 alt="video about things to know" ></video>
+        </div>
+    </div>
+</section>
 
 
-        <script src="bootstrap.min.js"></script>
-</body>
+
+
+
+
+
+
+
+
+
+<script src="./bootstrap.min.js"></script>
+  </body>
 </html>
