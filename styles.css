@@ -1,8 +1,9 @@
-@media (min-width: 768px) {
- 
-    .news-input,
-    input{
+
+    .news-input{
         width: 50%;
     }
-    
+
+img{
+    width: 200px;
 }
+
