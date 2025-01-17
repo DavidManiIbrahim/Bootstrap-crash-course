@@ -38,17 +38,38 @@
 
 <section class="bg-secondary text-light pt-5 text-center">
     <div class="container align-content-center">
-        <div class="d-md-flex p-3">
+        <div class="d-md-flex p-5 gap-4 ">
              <div class="w-50 m-auto">
-                <h1>Become a <span class="text-info">WEB Developer</span> </h1>
+                <h1>Become a <br> <span class="text-info">WEB Developer</span> </h1>
                 <p class="lead">We focus on teaching our students the fundamentals
                     of the latest and greatest technologies to prepare them
                     for their first dev role
                 </p>
-                <button type="button" class="btn btn-lg btn-primary">Enroll Now</button>
+                <button type="button" class="btn btn-lg btn-primary"
+                data-bs-toggle="modal" data-bs-target="#enroll">Enroll Now</button>
+                
+                <!-- modal -->
+                
+                <div class="modal fade" id="enroll" >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-black-50" id="enrollLabel">Modal Title</h5>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                          <div class="modal-body">
+                            <p class=" text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsam ut quam odio, voluptas cupiditate consequuntur similique reiciendis accusantium illo fuga est quaerat quos rerum sapiente magni ad iste nesciunt!</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" >Save Changes</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
              </div>
              <div class="col-sm mt-5">
-                 <img class="img-fluid rounded-circle d-none d-sm-block " src="./assets/ABELOV INTERNATIONAL LTD.jpg" 
+                 <img class="img-fluid rounded-circle d-sm-none d-md-block " src="./assets/ABELOV INTERNATIONAL LTD.jpg" 
                  alt="video about things to know" ></>
                 </div>
         </div>
@@ -90,6 +111,25 @@
                         </p>
                         <a class="btn btn-primary table-hover">Read More!</a>
 
+                        <!-- modal -->
+                        
+                        <div class="modal fade text-black-50" id="info">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Modal</h5>
+                                        <div class="btn-close" data-bs-dismiss="modal"></div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maxime eum non ea voluptatem saepe laudantium necessitatibus, provident fuga laborum fugit commodi, labore esse facere quis deleniti tempore magni quos.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,7 +145,8 @@
                             quibusdam itaque quis exercitationem repellat natus 
                             fugiat magnam provident assumenda cum totam, quasi,
                              ipsum repudiandae aliquam nemo.</p>
-                             <a class="btn btn-dark border">Read More!</a>
+                             <a class="btn btn-dark border"  data-bs-target="#info"
+                             data-bs-toggle="modal">Read More!</a>
                     </div>
                 </div>
             </div>
@@ -257,8 +298,8 @@
     <p class="lead text-center text-white mb-5">Our Instructors all have 5+ years working as
         a web developer in the industry
     </p>
-    <div class="row g-4">
-        <div class="col-md-6 col-lg-3 bg-light">
+    <div class="row gap-3">
+        <div class="col-md col-lgx bg-light">
             <div class="card-body text-center">
                 <img class="rounded-circle img-fluid mb-3" src="./assets/ABELOV INTERNATIONAL LTD.jpg" alt="" class="img-fluid">
                 <h3 class="card-title mb-3">John Doe</h3>
@@ -282,11 +323,14 @@
                     </a>
             </div>
         </div>
-        <div class="col-md-6 com-lg-3 bg-light">
+        <div class="col-md col-lg alert-dark bg-light">
             <div class="card-body text-center">
                 <img src="./assets/ABELOV INTERNATIONAL LTD.jpg" alt="" class="img-fluid rounded-circle mb-3">
                 <h3 class="card-title mb-3">Jane Doe</h3>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut expedita odit corrupti aliquam labore. Tempora aperiam eveniet dolor quasi, fugiat minima quae reprehenderit sint at, itaque repellendus eius rem eum!</p>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Ut expedita odit corrupti aliquam labore. Tempora aperiam eveniet 
+                     dolor quasi, fugiat minima quae reprehenderit sint at, itaque 
+                     repellendus eius rem eum!</p>
                 <a class="btn " href="#">
                     <i class="bi bi-twitter text-dark mx-1"></i>
                 </a>
@@ -301,11 +345,14 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-3 bg-light">
+        <div class="col-md col-lg mb-3 bg-light">
             <div class="card-body text-center">
                 <img src="./assets/ABELOV INTERNATIONAL LTD.jpg" alt="" class="img-fluid rounded-circle mb-3">
                 <h3 class="card-title">Bob Doe</h3>
-                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laboriosam tempore nam eum nisi nobis veniam fugit, suscipit quisquam recusandae pariatur dolorum provident aspernatur beatae, ipsum perferendis expedita id ab?</div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Culpa laboriosam tempore nam eum nisi nobis veniam fugit, suscipit
+                      quisquam recusandae pariatur dolorum provident aspernatur beatae,
+                       ipsum perferendis expedita id ab?</p>
                 <a class="btn " href="#">
                     <i class="bi bi-twitter text-dark mx-1"></i>
                 </a>
@@ -320,10 +367,72 @@
                 </a>
             </div>
         </div>
-
+        <div class="col-md col-lg bg-light">
+            <div class="card-body text-center">
+                <img src="./assets/ABELOV INTERNATIONAL LTD.jpg" alt="" class="img-fluid rounded circle">
+                <h3 class="card-title">Joseph Doe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+                     repudiandae eligendi natus corporis vitae esse dolorem nisi, 
+                     adipisci nostrum ipsum minus accusantium aperiam sit nihil atque 
+                     modi eius aut quam.</p>
+            </div>
+        </div>
     </div>
 </div>
 </section>
+
+<!-- contact & Map -->
+
+<section class="p-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location: </span>50 Main Street Boston MA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone: </span>(555) 555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone: </span>(333) 333-3333
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email: </span>(555)enroll@frontendbc.test
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email: </span>student@frontendbc.test
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-md bg-danger p-5">
+                <div id="map">123
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="mt-5 p-3 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">Copyright &copy; 2025 Frontend Bootcamp</p>
+        <a href="" class="position-absolute bottom-0 end-0 "></a>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
 
 
 
